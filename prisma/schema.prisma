@@ -36,7 +36,7 @@ model Student {
   name      String
   age       Int
   grade     Int
-  class     Class     @relation(fields: [classId], references: [id])
-  classId   Int
+  class     Class?    @relation(fields: [classId], references: [id])
+  classId   Int?
   deletedAt DateTime?
 }
