@@ -4,6 +4,7 @@
 
 ## Basic API with Scalability Considerations
 1. `POST /students`
+
    Use this to create students by passing in an array in request body as follows:
    ```
    {
@@ -20,8 +21,8 @@
 			"age": 22
 		}
 	]
-}
-```
+    }
+    
 2. `GET /student/:id`
   Use this route to get a student information by ID
 3. `GET /students?take=20&skip=40`
