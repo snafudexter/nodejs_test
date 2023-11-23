@@ -1,4 +1,4 @@
-import prisma from "./prisma_client";
+import prisma from "../prisma_client";
 
 export const getTotalStudentsCount = () => {
   return prisma.student.count();

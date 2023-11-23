@@ -32,10 +32,11 @@ model Class {
 }
 
 model Student {
-  id      Int    @id @default(autoincrement())
-  name    String
-  age     Int
-  grade   Int
-  class   Class  @relation(fields: [classId], references: [id])
-  classId Int
+  id        Int       @id @default(autoincrement())
+  name      String
+  age       Int
+  grade     Int
+  class     Class     @relation(fields: [classId], references: [id])
+  classId   Int
+  deletedAt DateTime?
 }
