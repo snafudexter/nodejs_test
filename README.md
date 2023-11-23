@@ -59,6 +59,8 @@ Run websocket client
 ## Task: Data aggregation system.
 Use route `GET /summary/` to get summary of student data
 
-## Websocket
 
+## Summary of approach
 
+Used Prisma ORM for mysql.
+Didn't get much time to implement validation the REST API payloads
